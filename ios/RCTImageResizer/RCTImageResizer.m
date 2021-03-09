@@ -80,7 +80,7 @@ NSData * quantizedImageData (UIImage * image, float quality) {
     //create liq attribute
     liq_attr *liq = liq_attr_create();
     liq_set_speed(liq, _speed);
-    liq_set_quality(liq, 10, quality);
+    liq_set_quality(liq, 1, quality);
     
     liq_image *img = liq_image_create_rgba_rows(liq,
                                                 (void **)rows,
